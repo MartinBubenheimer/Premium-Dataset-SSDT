@@ -35,6 +35,19 @@
     <DeploymentOptionDirectQueryMode>InMemory</DeploymentOptionDirectQueryMode>
     <DeploymentOptionQueryImpersonation>Default</DeploymentOptionQueryImpersonation>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Power BI Service Prod' ">
+    <DeploymentServerName>powerbi://api.powerbi.com/v1.0/myorg/Demo Martin</DeploymentServerName>
+    <DeploymentServerEdition>BusinessIntelligence</DeploymentServerEdition>
+    <DeploymentServerVersion>Unknown</DeploymentServerVersion>
+    <DeploymentServerDatabase>Adventure Works 2019 Sales Cube</DeploymentServerDatabase>
+    <DeploymentServerCubeName>Premium Dataset SSDT</DeploymentServerCubeName>
+    <DeploymentOptionProcessing>Full</DeploymentOptionProcessing>
+    <DeploymentOptionTransactionalDeployment>False</DeploymentOptionTransactionalDeployment>
+    <DeploymentOptionADALCache>Default</DeploymentOptionADALCache>
+    <DeploymentOptionDirectQueryMode>InMemory</DeploymentOptionDirectQueryMode>
+    <DeploymentOptionQueryImpersonation>Default</DeploymentOptionQueryImpersonation>
+    <OutputPath>bin\Power BI Service Prod\</OutputPath>
+  </PropertyGroup>
   <ItemGroup />
   <ItemGroup>
     <Compile Include="Model.bim">
